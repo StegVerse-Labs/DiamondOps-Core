@@ -6,4 +6,10 @@ ReactorOps emits:
 - asset_inspection_event
 - downtime_event
 
+ReactorOps exports schemas:
+- maintenance_event
+- downtime_event
+- asset_inspection_event
+- retrofit_event
+
 No secrets, only metadata + references.

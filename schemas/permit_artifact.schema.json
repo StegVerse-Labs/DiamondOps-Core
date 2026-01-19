@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "permit_artifact",
+  "type": "object",
+  "required": ["artifact_id", "site_id", "ts", "artifact_type", "reference"],
+  "properties": {
+    "artifact_id": { "type": "string" },
+    "site_id": { "type": "string" },
+    "ts": { "type": "string", "format": "date-time" },
+    "artifact_type": { "type": "string", "enum": ["permit_packet", "commissioning_evidence", "inspection_report", "training_record"] },
+    "reference": { "type": "string", "description": "Link or storage reference (no secrets)" },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": false
+}

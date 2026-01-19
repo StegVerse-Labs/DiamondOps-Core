@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "incident_event",
+  "type": "object",
+  "required": ["incident_id", "site_id", "severity", "ts", "category", "summary"],
+  "properties": {
+    "incident_id": { "type": "string" },
+    "site_id": { "type": "string" },
+    "ts": { "type": "string", "format": "date-time" },
+    "severity": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
+    "category": { "type": "string", "enum": ["gas", "fire", "electrical", "personnel", "process", "unknown"] },
+    "summary": { "type": "string", "maxLength": 1000 },
+    "corrective_actions": { "type": "array", "items": { "type": "string" } },
+    "attachments": { "type": "array", "items": { "type": "string" }, "description": "References only" }
+  },
+  "additionalProperties": false
+}

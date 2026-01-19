@@ -1,0 +1,21 @@
+name: Bug / inconsistency
+description: Report an inconsistency or problem in docs/schemas
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Affected files
+      description: Paths, schema names, links
+    validations:
+      required: true

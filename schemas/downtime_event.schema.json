@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "downtime_event",
+  "type": "object",
+  "required": ["downtime_id", "site_id", "asset_id", "start_ts", "end_ts", "downtime_type"],
+  "properties": {
+    "downtime_id": { "type": "string" },
+    "site_id": { "type": "string" },
+    "asset_id": { "type": "string" },
+    "start_ts": { "type": "string", "format": "date-time" },
+    "end_ts": { "type": "string", "format": "date-time" },
+    "downtime_type": { "type": "string", "enum": ["scheduled", "unscheduled"] },
+    "root_cause": { "type": "string", "enum": ["vacuum", "power", "cooling", "controls", "gas", "operator", "unknown"] },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": false
+}

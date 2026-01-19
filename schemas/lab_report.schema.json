@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "lab_report",
+  "type": "object",
+  "required": ["report_id", "site_id", "ts", "lab_name", "report_type", "reference"],
+  "properties": {
+    "report_id": { "type": "string" },
+    "site_id": { "type": "string" },
+    "ts": { "type": "string", "format": "date-time" },
+    "lab_name": { "type": "string" },
+    "report_type": { "type": "string", "enum": ["gem_grading", "ftir", "uv_vis", "raman", "pl", "thermal", "electrical", "other"] },
+    "reference": { "type": "string" },
+    "summary": { "type": "string", "maxLength": 2000 }
+  },
+  "additionalProperties": false
+}

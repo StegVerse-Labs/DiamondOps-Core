@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sensor_reading",
+  "type": "object",
+  "required": ["reading_id", "site_id", "asset_id", "ts", "sensor_type", "aggregation_window_s", "value"],
+  "properties": {
+    "reading_id": { "type": "string" },
+    "site_id": { "type": "string" },
+    "asset_id": { "type": "string" },
+    "ts": { "type": "string", "format": "date-time" },
+    "sensor_type": { "type": "string", "enum": ["h2", "ch4", "o2", "exhaust_flow", "cabinet_temp", "unknown"] },
+    "aggregation_window_s": { "type": "integer", "minimum": 1 },
+    "value": { "type": "number" },
+    "units": { "type": "string", "maxLength": 32 },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": false
+}

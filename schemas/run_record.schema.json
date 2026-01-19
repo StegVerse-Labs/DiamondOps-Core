@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "run_record",
+  "type": "object",
+  "required": ["run_id", "site_id", "asset_id", "start_ts", "end_ts", "run_type", "status"],
+  "properties": {
+    "run_id": { "type": "string", "minLength": 8 },
+    "site_id": { "type": "string" },
+    "asset_id": { "type": "string" },
+    "start_ts": { "type": "string", "format": "date-time" },
+    "end_ts": { "type": "string", "format": "date-time" },
+    "run_type": { "type": "string", "enum": ["gem_growth", "plate_growth", "research", "maintenance_test"] },
+    "status": { "type": "string", "enum": ["success", "partial", "failed", "aborted"] },
+    "recipe_ref": { "type": "string", "description": "Pointer to recipe/version in downstream repo" },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": false
+}

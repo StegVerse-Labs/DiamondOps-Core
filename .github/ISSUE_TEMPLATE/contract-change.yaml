@@ -1,0 +1,32 @@
+name: Contract change request
+description: Propose a change to DiamondOps-Core schemas/standards/interfaces
+title: "[Contract] "
+labels: ["contract"]
+body:
+  - type: textarea
+    attributes:
+      label: Problem
+      description: What problem are we solving?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Proposed change
+      description: Describe the schema/standard/interface change.
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Compatibility
+      options:
+        - label: PATCH (clarification only)
+        - label: MINOR (additive)
+        - label: MAJOR (breaking)
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Downstream impact
+      description: Which repos will need updates?
+    validations:
+      required: true

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "maintenance_event",
+  "type": "object",
+  "required": ["maintenance_id", "site_id", "asset_id", "ts", "category", "summary"],
+  "properties": {
+    "maintenance_id": { "type": "string" },
+    "site_id": { "type": "string" },
+    "asset_id": { "type": "string" },
+    "ts": { "type": "string", "format": "date-time" },
+    "category": { "type": "string", "enum": ["inspection", "repair", "replacement", "calibration", "upgrade"] },
+    "summary": { "type": "string" },
+    "parts_used": { "type": "array", "items": { "type": "string" } },
+    "attachments": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

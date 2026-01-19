@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "asset_inspection_event",
+  "type": "object",
+  "required": ["inspection_id", "site_id", "asset_id", "ts", "inspection_type", "summary", "risk_rating"],
+  "properties": {
+    "inspection_id": { "type": "string" },
+    "site_id": { "type": "string" },
+    "asset_id": { "type": "string" },
+    "ts": { "type": "string", "format": "date-time" },
+    "inspection_type": { "type": "string", "enum": ["baseline", "quarterly", "annual", "prepurchase", "post-incident", "pre-commissioning"] },
+    "risk_rating": { "type": "string", "enum": ["low", "medium", "high"] },
+    "summary": { "type": "string", "maxLength": 2000 },
+    "findings": { "type": "array", "items": { "type": "string" } },
+    "recommended_actions": { "type": "array", "items": { "type": "string" } },
+    "evidence_refs": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

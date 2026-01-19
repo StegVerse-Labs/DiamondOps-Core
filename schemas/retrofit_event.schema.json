@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "retrofit_event",
+  "type": "object",
+  "required": ["retrofit_id", "site_id", "asset_id", "ts", "phase", "category", "summary"],
+  "properties": {
+    "retrofit_id": { "type": "string" },
+    "site_id": { "type": "string" },
+    "asset_id": { "type": "string" },
+    "ts": { "type": "string", "format": "date-time" },
+    "phase": { "type": "string", "enum": ["proposal", "approved", "in_progress", "completed", "cancelled"] },
+    "category": { "type": "string", "enum": ["power_chain", "cooling", "controls", "vacuum", "gas_delivery", "safety", "other"] },
+    "summary": { "type": "string", "maxLength": 2000 },
+    "expected_impact": {
+      "type": "object",
+      "properties": {
+        "availability_delta_pct": { "type": "number" },
+        "downtime_reduction_hours_per_month": { "type": "number" },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "parts_used": { "type": "array", "items": { "type": "string" } },
+    "evidence_refs": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

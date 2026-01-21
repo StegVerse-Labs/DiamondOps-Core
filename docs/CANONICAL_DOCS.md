@@ -1,92 +1,66 @@
-# Canonical Documents (DiamondOps)
+# Canonical Documents (DiamondOps-Core)
 
-This document defines which documents in the DiamondOps ecosystem are canonical
-(source of truth) and how downstream repositories must reference or synchronize them.
+This document defines which files in the DiamondOps ecosystem are **canonical** (source of truth) and how other repos must **reference or synchronize** them.
 
-At this stage, DiamondOps-Core serves as both:
-- the **domain contract authority** (schemas, compatibility, change policy), and
-- the **platform posture authority** (positioning and liability boundaries).
-
-These roles may be separated into distinct repositories in the future.
-This document is written to remain valid across that transition.
-
----
+DiamondOps is documentation-first. Canonical documents exist to make platform posture, liability boundaries, and contributor rules consistent across all repos.
 
 ## Canonical vs Repo-Local
 
-- **Canonical** means the authoritative version lives in this repository and
-  downstream repos must reference or sync it via StegDB automation.
-- **Repo-local** means the document is specific to a repo and must not be
-  automatically overwritten.
+- **Canonical** means: the authoritative version lives in **DiamondOps-Core** and downstream repos must **sync** or **reference** it.
+- **Repo-local** means: the document is specific to that repo and should not be automatically overwritten.
 
----
+## Canonical Documents
 
-## Canonical Documents (Authoritative)
+The following files are canonical and must remain consistent across the ecosystem:
 
-### Platform Posture & Liability
-- `docs/POSITION.md`
+### Governance & Liability
 - `docs/LIABILITY_BOUNDARY.md`
+- `docs/POSITION.md`
 
-These define:
-- scope of responsibility
-- non-operational posture
-- boundaries used for ToS, partner agreements, and underwriting
+### Canonical Governance Meta
+- `docs/CANONICAL_DOCS.md` (this file)
 
-### Contract & Schema Governance
-- `schemas/README.md`
+## Conditional Canonicals (Stabilize First)
+
+These are good candidates for canonization once they stabilize:
+
+- `docs/SCHEMA_CHANGE_POLICY.md`
 - `docs/VERSIONING.md`
 - `docs/COMPATIBILITY.md`
-- `docs/SCHEMA_CHANGE_POLICY.md`
 
-These define:
-- schema meaning and intent
-- versioning rules
-- compatibility guarantees
-- allowed vs breaking changes
+When promoted to canonical, they must be added to StegDB’s canonical manifest and rolled out via PRs.
 
----
+## Repo-Local Documents (Not Canonical)
 
-## Explicitly Not Canonical Here
+These are intentionally repo-specific and must not be overwritten:
 
-The following are intentionally **not** canonical:
-
-- repo-specific READMEs
-- CHANGELOGs
-- product or workflow documentation unique to a repo
-- demos, examples, and experiments
-
----
+- `README.md`
+- `CHANGELOG.md`
+- `RELEASE.md`
+- product/domain docs (e.g., retrofit procedures, inspection packets, runbooks unique to a repo)
+- pitch/marketing docs (unless explicitly canonized)
 
 ## How Canonical Sync Works
 
-- **Source of truth:** `stegverse-labs/diamondops-core`
-- **Router & publisher:** `stegverse-labs/stegdb`
-- **Delivery:** PRs opened into downstream repos
+Canonical documents are distributed by automation:
 
-StegDB uses templates so downstream repos may include minimal contextual framing
-(e.g., repo name) without altering canonical meaning.
+- **Source of truth:** `StegVerse-Labs/DiamondOps-Core`
+- **Publisher:** `StegVerse-Labs/StegDB`
+- **Delivery:** PRs opened into each target repo
 
----
+StegDB uses templates so each target repo can include minimal repo-specific context (e.g., repo name) while preserving canonical meaning.
 
-## Downstream Repo Requirements
+## Requirements for Downstream Repos
 
 Downstream repos must:
 
-1. Keep canonical documents at expected paths.
-2. Avoid editing canonical files locally.
-3. Accept StegDB-generated PRs as the update mechanism.
+1. Keep canonical docs at the expected paths (e.g., `docs/LIABILITY_BOUNDARY.md`).
+2. Avoid editing canonical docs directly in downstream repos.
+3. Accept updates via StegDB-generated PRs.
 
-Emergency fixes must be made in the canonical source first,
-then propagated via StegDB.
+If an emergency patch is required in a downstream repo, the canonical copy in DiamondOps-Core must be updated immediately afterward, followed by a StegDB rollout PR.
 
----
+## Notes
 
-## Notes on Future Separation
-
-If DiamondOps platform posture is later moved to a dedicated `DiamondOps/` repo:
-
-- `POSITION.md` and `LIABILITY_BOUNDARY.md` will move with it
-- schema governance documents will remain in DiamondOps-Core
-- StegDB manifests will be updated, not rewritten
-
-No downstream repo behavior should need to change.
+- Canonical documents must remain **documentation-only** and must not embed secrets or customer data.
+- The liability boundary statement is the authoritative boundary used in for ToS, partner agreements, and underwriting references.

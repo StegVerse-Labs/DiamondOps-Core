@@ -1,0 +1,92 @@
+# DiamondOps Evidence Pack (Canonical)
+
+This document provides a **verifiable evidence index** demonstrating the
+documentation-only posture, governance model, and liability boundaries of the
+DiamondOps ecosystem.
+
+This file is **canonical** and maintained in **DiamondOps-Core**. Downstream
+repositories may reference it but must not modify it.
+
+---
+
+## 1. Documentation-Only Posture
+
+DiamondOps produces **documentation, schemas, and validation artifacts only**.
+
+DiamondOps does **not**:
+- manufacture equipment
+- install equipment
+- operate equipment
+- maintain equipment
+- control physical systems
+
+**Canonical source:**
+- Position Statement  
+  https://github.com/stegverse-labs/diamondops-core/blob/main/docs/POSITION.md
+
+---
+
+## 2. Liability Boundary
+
+DiamondOps responsibility is strictly limited to the **correctness of technical
+determinations and documentation at time of issuance**.
+
+All physical responsibility remains with:
+- asset owners
+- OEMs
+- installers
+- operators
+
+**Canonical source:**
+- Liability Boundary  
+  https://github.com/stegverse-labs/diamondops-core/blob/main/docs/LIABILITY_BOUNDARY.md
+
+---
+
+## 3. Canonical Governance & Enforcement
+
+Canonical documents are:
+- authored in **DiamondOps-Core**
+- registered and enforced by **StegDB**
+- propagated downstream via automated PRs
+
+Downstream repositories:
+- may not edit canonical documents
+- must accept updates via StegDB automation
+
+**Evidence:**
+- StegDB canonical sync workflow  
+  https://github.com/stegverse-labs/stegdb/actions/workflows/sync-diamondops-core-canonicals.yml
+
+---
+
+## 4. Scope of Downstream Repositories
+
+Repositories such as HydraSafe, ReactorOps, and YieldOS:
+- consume DiamondOps-Core canonicals
+- may add repo-specific documentation
+- do not expand DiamondOps liability or operational scope
+
+Any discrepancy between a downstream repo and a canonical document must be
+resolved in favor of the canonical document.
+
+---
+
+## 5. Intended Use
+
+This Evidence Pack is suitable for:
+- insurance underwriting review
+- regulatory inquiries
+- enterprise customer due diligence
+- partner compliance verification
+
+It is not a substitute for contractual terms, but serves as **public,
+verifiable proof of platform posture**.
+
+---
+
+## Canonical Status
+
+- **Canonical Source:** DiamondOps-Core
+- **Enforced By:** StegDB
+- **Modification Policy:** Update here first, then re-sync downstream

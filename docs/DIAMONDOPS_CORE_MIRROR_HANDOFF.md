@@ -1,6 +1,6 @@
 # DiamondOps-Core Mirror Handoff
 
-Last updated: 2026-08-02T16:58:00-05:00
+Last updated: 2026-08-02T17:17:00-05:00
 Status: MERGED INTO CANONICAL WORKSTREAM — external activation remains
 
 ## Active goal and goal ID
@@ -48,6 +48,7 @@ MERGED INTO: `StegVerse-Labs/DiamondOps-Core/docs/DIAMONDOPS_CORE_MIRROR_HANDOFF
 - Canonical session inventory installed; commit `afb6fbd`.
 - Durable claim registry installed; commit `e35aa7b`.
 - Control-plane validator installed; commit `2a8640e`.
+- AaCT-E organization identified by the user at `https://github.com/orgs/AaCT-E/repositories`; corrected claim and inventory commits `8cf0944` and `d59ee1e`.
 
 ## Incomplete work
 
@@ -59,13 +60,13 @@ Exact incomplete tasks and owners are maintained in `docs/revenue/SESSION_EXECUT
 4. `ReactorOps/commercial/`: add a representative facility-packet fixture and deterministic validation.
 5. `YieldOS/commercial/`: add a schema, example, and deterministic receipt validation.
 6. `DiamondOps-Core/docs/revenue/REGISTRATION_AND_FUNDING_TRACKER.md`: record consultant response, VVL, entity, EIN, SAM, SBA registry, DSIP, and VetCert using redacted receipts or secure pointers.
-7. Authoritative AaCT-E repository: locate it, read/create its handoff, freeze the runnable baseline, and install the SBIR topic-fit and technical-volume workspace.
+7. `AaCT-E` organization: enumerate repositories, select the authoritative repository, read/create its handoff, freeze the runnable baseline, and install the SBIR topic-fit and technical-volume workspace.
 
 ## Blockers and release conditions
 
 - Formation/VVL: owned by the veteran business consultant process. Release condition: consultant response or checkpoint on 2026-08-16. Next action: record response and advance formation.
 - LLC fee benefit: owned by consultant/Texas filing authority. Release condition: written confirmation of waiver-versus-refund procedure and evidence requirements.
-- AaCT-E: owner repository not located in connected installations. Release condition: exact authoritative repository becomes accessible.
+- AaCT-E: organization is identified, but the connected GitHub App currently returns no accessible repositories for owner `AaCT-E`. Release condition: install/authorize the GitHub App for the AaCT-E organization or provide an exact AaCT-E repository URL that the connector can access. Organization discovery alone does not select the canonical repository.
 - Propagation: blocked until a documented release candidate exists. Release condition: release criteria satisfied and direct verification can be performed in Site, Publisher, admissibility-wiki, and stegguardian-wiki.
 
 ## Validation commands
@@ -84,7 +85,7 @@ The second command applies only when present in the checked-out repository. Work
 - Input owner: `StegVerse-Labs/ReactorOps`.
 - Aggregation/receipt owner: `StegVerse-Labs/YieldOS`.
 - Deferred experimental owner: `StegVerse-Labs/CrystalWorks`.
-- Funding artifact owner: authoritative AaCT-E repository, currently unresolved.
+- Funding artifact organization: `AaCT-E`; exact repository unresolved because connector access is not yet available.
 - Release propagation destinations: `StegVerse-Labs/Site`, `GCAT-BCAT-Engine/Publisher`, `admissibility-wiki`, and `stegguardian-wiki`.
 
 ## Machine-owned continuation
@@ -100,7 +101,7 @@ Transferred session goals:
 4. Cross-repository DiamondOps delivery ownership.
 5. Entity/EIN/SAM/SBA/DSIP/VetCert sequence.
 6. Veteran consultant/VVL request and LLC fee benefit observation.
-7. AaCT-E-led SBIR strategy and unresolved repository blocker.
+7. AaCT-E-led SBIR strategy, identified organization, and unresolved repository-access blocker.
 8. Release propagation obligations.
 9. Duplicate-control, task claims, validation automation, and archival criteria.
 
@@ -116,7 +117,7 @@ No unique requirement from this session remains only in chat. Continuing work is
 
 Repository release is not yet authorized: no outreach receipt, PE agreement, signed SOW, payment, complete registration chain, selected SBIR topic, or validated AaCT-E package is recorded.
 
-Session archival is authorized once this handoff, execution inventory, claims registry, and validation workflow are committed because all unresolved work has a durable owner, exact location, release condition, evidence requirement, and next action. Archiving the conversation does not assert repository release or business activation.
+Session archival is authorized because the AaCT-E correction, exact organization URL, connector-access blocker, release condition, and next action are now durably recorded. Archiving the conversation does not assert repository release or business activation.
 
 ## Completeness metrics
 
@@ -129,4 +130,4 @@ Denominator: 16 required canonical revenue-program components.
 - Propagation: 0/4 = 0%
 - Goal activation: 5/12 = 42%
 - Session consolidation: 9/9 = 100%
-- Archival readiness: 100% after the control-plane workflow file is committed; runtime workflow observation remains a repository validation task, not a reason to retain chat.
+- Archival readiness: 100%; AaCT-E organization identity and access blocker are now preserved in the canonical control plane.

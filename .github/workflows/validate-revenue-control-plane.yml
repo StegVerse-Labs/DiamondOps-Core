@@ -1,0 +1,69 @@
+name: Validate Revenue Control Plane
+
+on:
+  push:
+    paths:
+      - 'docs/DIAMONDOPS_CORE_MIRROR_HANDOFF.md'
+      - 'docs/revenue/**'
+      - 'tasks/revenue-claims.json'
+      - 'scripts/validate_revenue_control_plane.py'
+      - '.github/workflows/validate-revenue-control-plane.yml'
+  pull_request:
+    paths:
+      - 'docs/DIAMONDOPS_CORE_MIRROR_HANDOFF.md'
+      - 'docs/revenue/**'
+      - 'tasks/revenue-claims.json'
+      - 'scripts/validate_revenue_control_plane.py'
+      - '.github/workflows/validate-revenue-control-plane.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '17 13 * * 1'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: revenue-control-plane-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate revenue control plane
+        run: python3 scripts/validate_revenue_control_plane.py
+      - name: Persist validation receipt
+        if: always()
+        run: |
+          mkdir -p validation-receipt
+          python3 - <<'PY'
+          import json, os
+          from datetime import datetime, timezone
+          receipt = {
+              "workflow": "validate-revenue-control-plane",
+              "repository": os.environ.get("GITHUB_REPOSITORY"),
+              "run_id": os.environ.get("GITHUB_RUN_ID"),
+              "run_attempt": os.environ.get("GITHUB_RUN_ATTEMPT"),
+              "sha": os.environ.get("GITHUB_SHA"),
+              "ref": os.environ.get("GITHUB_REF"),
+              "observed_at": datetime.now(timezone.utc).isoformat(),
+              "result": "inspect job conclusion; receipt creation does not override failures"
+          }
+          with open("validation-receipt/revenue-control-plane.json", "w", encoding="utf-8") as f:
+              json.dump(receipt, f, indent=2)
+          PY
+      - name: Upload validation receipt
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: revenue-control-plane-receipt-${{ github.run_id }}-${{ github.run_attempt }}
+          path: validation-receipt/revenue-control-plane.json
+          if-no-files-found: error
+          retention-days: 90

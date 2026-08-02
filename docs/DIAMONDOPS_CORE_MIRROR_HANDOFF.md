@@ -1,63 +1,66 @@
 # DiamondOps-Core Mirror Handoff
 
 Last updated: 2026-08-02
-Status: ACTIVE — acquisition environment installed
+Status: ACTIVE — near-term revenue program installed
 
 ## Current goal
-Operate a customer-acquisition environment for HydraSafe, focused on CVD diamond growers and diamond-reactor OEMs that use or support hydrogen-bearing processes.
+Convert DiamondOps documentation assets into signed HydraSafe facility engagements while running entity, SAM, VetCert, and AaCT-E SBIR preparation in parallel.
 
 ## Source of truth
-This file is the current handoff and task source of truth for this repository.
+This file is the current handoff and task source of truth for DiamondOps-Core.
 
-## Activated workstream
-`customer-acquisition/hydrasafe/`
+## Installed workstreams
+- `customer-acquisition/hydrasafe/`
+- `docs/revenue/NEAR_TERM_REVENUE_PLAN.md`
+- `docs/revenue/REGISTRATION_AND_FUNDING_TRACKER.md`
 
-## Installed deliverables
-- [x] Qualified prospect registry containing 30 organizations, prioritizing the United States and Surat, India.
-- [x] Separate grower/operator, reactor-OEM, adjacent-operator, and channel segments.
-- [x] Public-source evidence, verification status, priority score, stage, and next action fields.
-- [x] Bounded free hydrogen-documentation gap-assessment offer.
-- [x] Grower and OEM outreach templates, follow-ups, and qualification workflow.
-- [x] CRM-style status fields and operating cadence.
-- [x] Paid-remediation conversion boundary.
-- [x] Assessment intake, checklist, gap register, exclusions, and quality controls.
+## Installed acquisition environment
+- [x] 30-organization prospect registry covering the United States, Surat, OEMs, growers, adjacent operators, and channels.
+- [x] Verification, priority, stage, evidence, and next-action fields.
+- [x] Free gap-assessment offer, outreach sequence, intake checklist, and paid-remediation boundary.
+- [x] Cross-repository commercial ownership model for HydraSafe, ReactorOps, YieldOS, and CrystalWorks.
+- [x] Entity/SAM/SBA/DSIP/VetCert evidence tracker with public-repository privacy boundary.
+- [x] AaCT-E SBIR positioning and repository-location blocker recorded.
 
-## Current evidence
-Installed files:
-- `customer-acquisition/hydrasafe/README.md`
-- `customer-acquisition/hydrasafe/prospects.csv`
-- `customer-acquisition/hydrasafe/outreach.md`
-- `customer-acquisition/hydrasafe/assessment-intake.md`
+## Cross-repository state
+- `StegVerse-Labs/HydraSafe`: commercial offer, assessment, SOW, PE-partner brief, and report template installed.
+- `StegVerse-Labs/ReactorOps`: revenue handoff and HydraSafe delivery interface installed.
+- `StegVerse-Labs/YieldOS`: revenue handoff and facility packet aggregation model installed.
+- `StegVerse-Labs/CrystalWorks`: handoff installed; intentionally excluded from the initial sales critical path.
+- AaCT-E: no connected repository was located; the SBIR technical-volume workspace remains blocked pending exact repository identification/access.
 
-Current registry state:
-- 30 total prospects
-- 19 marked VERIFIED
-- 11 marked RESEARCHED
-- United States, Surat, and directly relevant global OEM coverage
-- No personal contact data fabricated; public organization contact routes only
-
-## Next execution task
-1. Re-verify all 11 RESEARCHED records against current official sources.
-2. Identify role-based contacts for the first ten Tier A prospects without inserting unverified personal addresses.
-3. Move the first verified batch to `READY_FOR_OUTREACH` only after personalization evidence is captured.
-4. Record contact dates, responses, and next actions in `prospects.csv`.
+## Immediate execution queue
+1. Verify the remaining prospect records and prepare the first ten Tier A accounts.
+2. Identify at least five licensed fire-protection/process-safety PE candidates and begin qualification.
+3. Establish confidential customer document intake and proposal/payment mechanics in HydraSafe.
+4. Record entity, EIN, SAM, SBA, DSIP, and VetCert progress using redacted receipts and secure pointers only.
+5. Locate the authoritative AaCT-E repository, read or create its mirror handoff, and install the SBIR technical-volume workspace there.
 
 ## Completion rule
-Work is complete only when installed in this repository, directly inspectable, evidence-backed, and reflected in this handoff.
+Work counts only when installed, filed, sent, signed, paid, or otherwise activated; it must be supported by inspectable evidence and reflected in the controlling handoff.
 
-## Remaining modules / integrations
+## Remaining modules
 Destination: `StegVerse-Labs/DiamondOps-Core`
-- Outreach execution log or automated CRM adapter
-- Source-refresh validator
-- Assessment report generator
-- Paid-remediation proposal template
-- Evidence-receipt schema for document assessments
+- outreach execution log or CRM adapter;
+- source-refresh validator;
+- cross-repository delivery receipt contract;
+- official solicitation/topic verification record.
 
-Release-state verification destinations:
-- `StegVerse-Labs/Site`
-- `GCAT-BCAT-Engine/Publisher`
-- `admissibility-wiki`
-- `stegguardian-wiki`
+Destination: `StegVerse-Labs/HydraSafe`
+- confidential intake agreement and secure transfer procedure;
+- proposal, invoice/deposit, and change-order templates;
+- complete permit-packet framework templates;
+- verified PE partner and engagement terms;
+- first assessment and signed SOW receipts.
+
+Destination: authoritative AaCT-E repository
+- mirror handoff if absent;
+- runnable baseline freeze/tag;
+- SBIR topic-fit matrix;
+- Phase I technical volume, work plan, assertions, transition plan, and commercialization volume.
 
 ## Release posture
-Not ready for tagging. The acquisition environment is installed and activation-ready, but no outreach batch has yet been executed and the researched records still require verification.
+Not ready for tagging. The architecture and commercial environment are installed, but no outreach receipt, PE agreement, registration receipt, signed customer SOW, payment, or SBIR topic selection is yet recorded.
+
+## Required release propagation
+At release state, verify pertinent information in StegVerse-Labs/Site, GCAT-BCAT-Engine/Publisher, admissibility-wiki, and stegguardian-wiki.

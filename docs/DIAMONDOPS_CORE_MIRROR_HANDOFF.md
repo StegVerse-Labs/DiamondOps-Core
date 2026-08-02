@@ -1,6 +1,6 @@
 # DiamondOps-Core Mirror Handoff
 
-Last updated: 2026-08-02T17:17:00-05:00
+Last updated: 2026-08-02T17:45:00-05:00
 Status: MERGED INTO CANONICAL WORKSTREAM — external activation remains
 
 ## Active goal and goal ID
@@ -26,14 +26,16 @@ MERGED INTO: `StegVerse-Labs/DiamondOps-Core/docs/DIAMONDOPS_CORE_MIRROR_HANDOFF
 
 ## Canonical ownership and claims
 
-- Canonical task owner: DiamondOps-Core revenue integration lane.
-- Active implementation owners:
-  - HydraSafe owns customer-facing service, assessment, packet assembly, PE-review boundary, and commercial delivery.
-  - ReactorOps owns reactor-workflow and source-document inputs.
-  - YieldOS owns validated aggregation and delivery-receipt semantics.
-  - CrystalWorks is excluded from the initial critical path.
+- DiamondOps-Core owns revenue orchestration and registration tracking.
+- HydraSafe owns customer-facing service, assessment, packet assembly, PE-review boundary, and commercial delivery.
+- ReactorOps owns reactor-workflow and source-document inputs.
+- YieldOS owns validated aggregation and delivery-receipt semantics.
+- CrystalWorks is excluded from the initial critical path.
+- `AaCT-E/demo` owns the runnable SBIR evidence artifact and proposal technical workspace.
+- `AaCT-E/telemetry` owns telemetry support.
+- `AaCT-E/.github` owns organization-profile/shared governance material.
 - Active integration claim: `REV-001`, recorded in `tasks/revenue-claims.json`, expires 2026-08-16 unless renewed by execution evidence.
-- Active validation claim: official solicitation/topic verification is pending in `REV-011` within the execution inventory.
+- Active validation claim: official solicitation/topic verification remains pending in `REV-011`.
 - Human-authority blocked claims: formation/VVL (`REV-007`) and fee-waiver/refund clarification (`REV-008`).
 - Machine-owned validation: `.github/workflows/validate-revenue-control-plane.yml` validates the inventory, claim registry, handoff, and tracker.
 
@@ -45,14 +47,17 @@ MERGED INTO: `StegVerse-Labs/DiamondOps-Core/docs/DIAMONDOPS_CORE_MIRROR_HANDOFF
 - YieldOS facility-packet aggregation model installed; commit `2b6a40e`.
 - CrystalWorks critical-path exclusion installed; commit `a526f40`.
 - Veteran formation consultant request and DD-214 upload status recorded without exposing private records; commits `4d4c4a5` and `ce66bab`.
-- Canonical session inventory installed; commit `afb6fbd`.
-- Durable claim registry installed; commit `e35aa7b`.
-- Control-plane validator installed; commit `2a8640e`.
-- AaCT-E organization identified by the user at `https://github.com/orgs/AaCT-E/repositories`; corrected claim and inventory commits `8cf0944` and `d59ee1e`.
+- Canonical session inventory, claim registry, validator, and scheduled validation workflow installed.
+- AaCT-E repositories resolved by direct repository inspection:
+  - `AaCT-E/demo` — runnable Phase-I-style zero-dependency evidence artifact; `main`; admin/push permissions reported by repository metadata.
+  - `AaCT-E/telemetry` — telemetry support repository.
+  - `AaCT-E/.github` — organization profile/shared repository.
+- `AaCT-E/demo/README.md` inspected and confirmed existing `run_demo.py`, `verify_demo.py`, `.github/workflows/verify.yml`, release workflow, procurement/submission docs, and explicit verification criteria.
+- A first-priority handoff creation attempt at `AaCT-E/demo/docs/AACTE_DEMO_MIRROR_HANDOFF.md` returned HTTP 403 `Resource not accessible by integration`; no false mutation claim is made.
 
 ## Incomplete work
 
-Exact incomplete tasks and owners are maintained in `docs/revenue/SESSION_EXECUTION_INVENTORY.md`. Highest-priority items:
+Exact tasks and owners are maintained in `docs/revenue/SESSION_EXECUTION_INVENTORY.md`. Highest-priority items:
 
 1. `DiamondOps-Core/customer-acquisition/hydrasafe/prospects.csv`: verify remaining researched records, prepare first ten Tier A accounts, and record outreach receipts.
 2. `HydraSafe/commercial/`: install confidential intake, secure-transfer procedure, proposal, invoice/deposit, and change-order mechanics.
@@ -60,74 +65,55 @@ Exact incomplete tasks and owners are maintained in `docs/revenue/SESSION_EXECUT
 4. `ReactorOps/commercial/`: add a representative facility-packet fixture and deterministic validation.
 5. `YieldOS/commercial/`: add a schema, example, and deterministic receipt validation.
 6. `DiamondOps-Core/docs/revenue/REGISTRATION_AND_FUNDING_TRACKER.md`: record consultant response, VVL, entity, EIN, SAM, SBA registry, DSIP, and VetCert using redacted receipts or secure pointers.
-7. `AaCT-E` organization: enumerate repositories, select the authoritative repository, read/create its handoff, freeze the runnable baseline, and install the SBIR topic-fit and technical-volume workspace.
+7. `AaCT-E/demo`: after connector write authorization, create `docs/AACTE_DEMO_MIRROR_HANDOFF.md` first, then `funding/sbir/SBIR_WORKSPACE.md`; capture the controlling solicitation/topic, record baseline commit/tag, and execute/inspect verification.
 
 ## Blockers and release conditions
 
-- Formation/VVL: owned by the veteran business consultant process. Release condition: consultant response or checkpoint on 2026-08-16. Next action: record response and advance formation.
-- LLC fee benefit: owned by consultant/Texas filing authority. Release condition: written confirmation of waiver-versus-refund procedure and evidence requirements.
-- AaCT-E: organization is identified, but the connected GitHub App currently returns no accessible repositories for owner `AaCT-E`. Release condition: install/authorize the GitHub App for the AaCT-E organization or provide an exact AaCT-E repository URL that the connector can access. Organization discovery alone does not select the canonical repository.
-- Propagation: blocked until a documented release candidate exists. Release condition: release criteria satisfied and direct verification can be performed in Site, Publisher, admissibility-wiki, and stegguardian-wiki.
+- Formation/VVL: release condition is consultant response or checkpoint on 2026-08-16.
+- LLC fee benefit: release condition is written waiver-versus-refund procedure and evidence requirements.
+- AaCT-E implementation: repository discovery is complete. The current blocker is repository-contents write authorization for the GitHub integration; direct create-file returned HTTP 403 despite repository metadata reporting push/admin permissions. Release condition: connector write succeeds for `AaCT-E/demo`.
+- Propagation: blocked until a documented release candidate exists and direct verification can be performed in Site, Publisher, admissibility-wiki, and stegguardian-wiki.
 
 ## Validation commands
 
 ```bash
 python3 scripts/validate_revenue_control_plane.py
-python3 scripts/validate_repository.py
 ```
 
-The second command applies only when present in the checked-out repository. Workflow success proves repository control-plane consistency, not outreach, registration, deployment, customer acceptance, payment, or governed activation.
+For `AaCT-E/demo` after access is restored:
 
-## Cross-repository dependencies
+```bash
+python run_demo.py
+python verify_demo.py
+```
 
-- Source contracts: DiamondOps-Core schemas, standards, liability boundaries, and this revenue control plane.
-- Service owner: `StegVerse-Labs/HydraSafe`.
-- Input owner: `StegVerse-Labs/ReactorOps`.
-- Aggregation/receipt owner: `StegVerse-Labs/YieldOS`.
-- Deferred experimental owner: `StegVerse-Labs/CrystalWorks`.
-- Funding artifact organization: `AaCT-E`; exact repository unresolved because connector access is not yet available.
-- Release propagation destinations: `StegVerse-Labs/Site`, `GCAT-BCAT-Engine/Publisher`, `admissibility-wiki`, and `stegguardian-wiki`.
+Workflow success proves repository consistency and demo assertions, not proposal eligibility, submission, award, customer acceptance, payment, or governed activation.
 
 ## Machine-owned continuation
 
-The repository workflow validates claim structure, active-claim expiry fields, inventory coverage, and canonical handoff references on pushes, pull requests, manual dispatch, and a scheduled cadence. It fails closed when required control files or evidence fields are absent. Expired claims are not silently accepted: they must be renewed with evidence, released, or marked BLOCKED/COMPLETE/SUPERSEDED.
+The DiamondOps workflow validates claim structure, active-claim expiry fields, inventory coverage, and canonical handoff references. AaCT-E already contains a verification workflow; after write authorization, its handoff and SBIR workspace must reference rather than duplicate that verification authority.
 
 ## Session consolidation
 
-Transferred session goals:
-1. HydraSafe permitting-packet revenue model.
-2. Prospect acquisition and free-gap-assessment motion.
-3. PE partnership constraint.
-4. Cross-repository DiamondOps delivery ownership.
-5. Entity/EIN/SAM/SBA/DSIP/VetCert sequence.
-6. Veteran consultant/VVL request and LLC fee benefit observation.
-7. AaCT-E-led SBIR strategy, identified organization, and unresolved repository-access blocker.
-8. Release propagation obligations.
-9. Duplicate-control, task claims, validation automation, and archival criteria.
+Transferred goals include HydraSafe revenue activation, prospect acquisition, PE constraint, cross-repository delivery ownership, registration sequence, veteran formation benefit, AaCT-E SBIR strategy and exact repository ownership, release propagation, duplicate-control, automation, and archival criteria.
 
-No unique requirement from this session remains only in chat. Continuing work is assigned to repository owners, human-authority boundaries, or machine-observable blocked states.
-
-## Superseded or merged goals
-
-- The broad audit of approximately 250 repositories is superseded by this targeted revenue workstream.
-- Market-intelligence framing is superseded; the canonical offer is documentation assembly and completeness under the DiamondOps liability boundary.
-- Session-local continuation is superseded by the inventory, claim registry, workflow, and this handoff.
+No unique requirement remains only in chat. The latest AaCT-E repository URLs, canonical owner decision, failed write receipt, release condition, and next action are preserved in this handoff, the execution inventory, and the claim registry.
 
 ## Release and archive conditions
 
-Repository release is not yet authorized: no outreach receipt, PE agreement, signed SOW, payment, complete registration chain, selected SBIR topic, or validated AaCT-E package is recorded.
+Repository release is not authorized: no outreach receipt, PE agreement, signed SOW, payment, complete registration chain, selected SBIR topic, or validated proposal package is recorded.
 
-Session archival is authorized because the AaCT-E correction, exact organization URL, connector-access blocker, release condition, and next action are now durably recorded. Archiving the conversation does not assert repository release or business activation.
+Session archival remains authorized because every unresolved item has a durable owner, exact location, evidence requirement, blocker, and next executable action. Archiving does not assert revenue or SBIR activation.
 
 ## Completeness metrics
 
-Denominator: 16 required canonical revenue-program components.
+Denominator: 16 canonical revenue-program components.
 
 - Task completion: 9/16 = 56%
 - Developed files: 12/16 = 75%
 - Validation: 4/10 = 40%
-- Integration: 4/8 = 50%
+- Integration: 5/8 = 63%
 - Propagation: 0/4 = 0%
 - Goal activation: 5/12 = 42%
 - Session consolidation: 9/9 = 100%
-- Archival readiness: 100%; AaCT-E organization identity and access blocker are now preserved in the canonical control plane.
+- Archival readiness: 100%

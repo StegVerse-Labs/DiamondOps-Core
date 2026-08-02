@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-08-02T16:58:00-05:00",
+  "updated_at": "2026-08-02T17:17:00-05:00",
   "canonical_handoff": "docs/DIAMONDOPS_CORE_MIRROR_HANDOFF.md",
   "allowed_states": ["UNCLAIMED", "CLAIMED_FOR_IMPLEMENTATION", "CLAIMED_FOR_VALIDATION", "CLAIMED_FOR_INTEGRATION", "MACHINE_OWNED", "BLOCKED", "COMPLETE", "SUPERSEDED", "MERGED_INTO_CANONICAL_WORKSTREAM"],
   "claims": [
@@ -39,18 +39,18 @@
     {
       "task_id": "REV-010",
       "originating_goal": "AaCT-E-led SBIR Phase I proposal",
-      "repository": "UNKNOWN/AaCT-E",
+      "repository": "AaCT-E organization; exact repository unresolved",
       "branch": "unknown",
-      "surfaces": ["authoritative mirror handoff", "SBIR technical-volume workspace"],
+      "surfaces": ["https://github.com/orgs/AaCT-E/repositories", "authoritative repository mirror handoff", "SBIR technical-volume workspace"],
       "lane": "aacte-funding",
-      "role": "implementation",
+      "role": "repository discovery then implementation",
       "state": "BLOCKED",
       "claimed_at": "2026-08-02T16:58:00-05:00",
       "expires_at": "2026-08-30T23:59:59-05:00",
-      "release_condition": "authoritative AaCT-E repository is located and accessible",
-      "expected_evidence": ["repository identity", "mirror handoff", "runnable baseline commit/tag"],
-      "collision_boundaries": ["do not install AaCT-E proposal files in unrelated repositories"],
-      "next_task_after_release": "read/create handoff, freeze baseline, install topic-fit matrix"
+      "release_condition": "GitHub App access is granted to the AaCT-E organization or an exact AaCT-E repository URL accessible to the connector is identified",
+      "expected_evidence": ["AaCT-E organization confirmed", "exact repository identity", "mirror handoff", "runnable baseline commit/tag"],
+      "collision_boundaries": ["do not install AaCT-E proposal files in unrelated repositories", "do not treat organization discovery as repository selection"],
+      "next_task_after_release": "enumerate AaCT-E repositories, select canonical owner, read/create handoff, freeze baseline, install topic-fit matrix"
     },
     {
       "task_id": "REV-013",

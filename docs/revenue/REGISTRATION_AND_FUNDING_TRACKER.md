@@ -6,12 +6,22 @@ Last updated: 2026-08-02
 
 | Gate | Required evidence | Status | Blocking next step |
 |---|---|---|---|
-| US for-profit entity | formation certificate; governing/ownership document | NOT RECORDED | EIN, SAM, VetCert, SBIR eligibility |
+| Veteran business formation consultation / VVL pre-formation | consultant-request receipt; DD-214 verification submitted through the authorized portal | SUBMITTED 2026-08-02 — AWAITING CONSULTANT, stated response window up to 14 days | consultant verification, VVL issuance, formation-document guidance |
+| US for-profit entity | formation certificate; governing/ownership document | PENDING VVL/CONSULTANT GUIDANCE | EIN, SAM, VetCert, SBIR eligibility |
 | EIN | IRS issuance confirmation | NOT RECORDED | SAM legal-name validation |
 | SAM.gov | active entity record and UEI | NOT STARTED/NOT RECORDED | SBA registry, DSIP submission, VetCert |
 | SBA Company Registry | SBC Control ID | NOT STARTED/NOT RECORDED | SBIR submission |
 | DSIP | active account and organization access | NOT STARTED/NOT RECORDED | topic submission |
 | VetCert | application receipt and later decision | NOT STARTED/NOT RECORDED | VOSB/SDVOSB set-aside access |
+
+### Current formation checkpoint
+
+- Request submitted: 2026-08-02
+- Verification document uploaded: DD-214, through the authorized veteran-business process
+- Expected consultant response window: up to 14 days
+- Follow-up checkpoint if no response: 2026-08-16
+- Next action after consultant contact: provide any requested verification, receive the VVL and step-by-step formation guidance, prepare formation documents, return them for consultant review, then file through SOSUpload
+- Evidence handling: retain the receipt and uploaded DD-214 only in secure private storage; do not commit the DD-214 or personal identifiers to this repository
 
 Do not commit sensitive identifiers, DD-214 contents, tax identifiers, passwords, or private ownership records to a public repository. Commit only redacted receipts, status, dates, and secure-record pointers.
 

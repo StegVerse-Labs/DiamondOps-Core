@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "updated_at": "2026-08-02T16:58:00-05:00",
+  "canonical_handoff": "docs/DIAMONDOPS_CORE_MIRROR_HANDOFF.md",
+  "allowed_states": ["UNCLAIMED", "CLAIMED_FOR_IMPLEMENTATION", "CLAIMED_FOR_VALIDATION", "CLAIMED_FOR_INTEGRATION", "MACHINE_OWNED", "BLOCKED", "COMPLETE", "SUPERSEDED", "MERGED_INTO_CANONICAL_WORKSTREAM"],
+  "claims": [
+    {
+      "task_id": "REV-001",
+      "originating_goal": "Near-term revenue orchestration and session consolidation",
+      "repository": "StegVerse-Labs/DiamondOps-Core",
+      "branch": "main",
+      "surfaces": ["docs/DIAMONDOPS_CORE_MIRROR_HANDOFF.md", "docs/revenue/SESSION_EXECUTION_INVENTORY.md", "tasks/revenue-claims.json"],
+      "lane": "diamondops-revenue-integration",
+      "role": "integration",
+      "state": "CLAIMED_FOR_INTEGRATION",
+      "claimed_at": "2026-08-02T16:58:00-05:00",
+      "expires_at": "2026-08-16T23:59:59-05:00",
+      "release_condition": "handoff and inventory updated after consultant checkpoint or meaningful revenue-state change",
+      "expected_evidence": ["commits", "updated handoff", "validated claim registry"],
+      "collision_boundaries": ["do not duplicate HydraSafe service files", "do not store private registration documents"],
+      "next_task_after_release": "renew only with new execution evidence or mark COMPLETE/BLOCKED"
+    },
+    {
+      "task_id": "REV-007",
+      "originating_goal": "Veteran business formation consultation and VVL",
+      "repository": "StegVerse-Labs/DiamondOps-Core",
+      "branch": "main",
+      "surfaces": ["docs/revenue/REGISTRATION_AND_FUNDING_TRACKER.md"],
+      "lane": "human-authority-formation",
+      "role": "external authority with redacted receipt recording",
+      "state": "BLOCKED",
+      "claimed_at": "2026-08-02T14:57:00-05:00",
+      "expires_at": "2026-08-16T23:59:59-05:00",
+      "release_condition": "consultant responds or checkpoint date is reached without response",
+      "expected_evidence": ["consultant correspondence receipt", "VVL or written next-step guidance"],
+      "collision_boundaries": ["DD-214 remains private", "no tax identifiers in repository"],
+      "next_task_after_release": "record response and advance entity formation gate"
+    },
+    {
+      "task_id": "REV-010",
+      "originating_goal": "AaCT-E-led SBIR Phase I proposal",
+      "repository": "UNKNOWN/AaCT-E",
+      "branch": "unknown",
+      "surfaces": ["authoritative mirror handoff", "SBIR technical-volume workspace"],
+      "lane": "aacte-funding",
+      "role": "implementation",
+      "state": "BLOCKED",
+      "claimed_at": "2026-08-02T16:58:00-05:00",
+      "expires_at": "2026-08-30T23:59:59-05:00",
+      "release_condition": "authoritative AaCT-E repository is located and accessible",
+      "expected_evidence": ["repository identity", "mirror handoff", "runnable baseline commit/tag"],
+      "collision_boundaries": ["do not install AaCT-E proposal files in unrelated repositories"],
+      "next_task_after_release": "read/create handoff, freeze baseline, install topic-fit matrix"
+    },
+    {
+      "task_id": "REV-013",
+      "originating_goal": "Release propagation",
+      "repository": "StegVerse-Labs/DiamondOps-Core",
+      "branch": "main",
+      "surfaces": ["StegVerse-Labs/Site", "GCAT-BCAT-Engine/Publisher", "admissibility-wiki", "stegguardian-wiki"],
+      "lane": "release-propagation",
+      "role": "integration",
+      "state": "BLOCKED",
+      "claimed_at": "2026-08-02T16:58:00-05:00",
+      "expires_at": "2026-09-30T23:59:59-05:00",
+      "release_condition": "HydraSafe revenue environment reaches documented release candidate criteria",
+      "expected_evidence": ["release/tag", "propagation commits or explicit no-change receipts"],
+      "collision_boundaries": ["no propagation claim before direct verification"],
+      "next_task_after_release": "verify each destination and record receipts"
+    }
+  ]
+}

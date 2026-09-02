@@ -1,0 +1,7 @@
+# Capability Statement — StegVerse Holdings LLC
+UEI [PENDING] | CAGE [PENDING] | SAM [PENDING]
+Capabilities [ONLY IF HOLDINGS ITSELF DELIVERS]
+Differentiators [EVIDENCE ONLY]
+NAICS/PSC/NIGP [SELECT]
+Past performance [VERIFIABLE AND RELATIONSHIP DISCLOSED]
+Contact [AUTHORIZED]

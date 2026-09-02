@@ -193,3 +193,19 @@ Inventory update: `90a8656f1538f1f8286e4597cd66a90b81931e8a`.
 Claim update: `04528e065ad91d4d959030214b4603321e538bd2`.
 
 A hosted workflow result for the validator commit was not exposed during this execution window, so hosted validation success is not claimed.
+
+
+## 2026-09-02 business-management ownership migration
+
+Generalized business lifecycle ownership has moved out of DiamondOps.
+
+Canonical owners:
+- business identity/lifecycle/evidence requirements: `StegVerse-Labs/StegBusiness`;
+- operational formation/procurement/receipt/business-administration workflows: `StegVerse-Labs/StegBusiness-Ops`.
+
+Temporary source retained pending destination hosted validation:
+- `docs/Filing Docs/`
+
+DiamondOps must retain only DiamondOps/HydraSafe-specific commercial references after migration closeout. It must not remain the canonical owner of generalized LLC formation, EIN, SAM, CMBL, VetCert, VetHUB, accounting, banking, or corporate-renewal operations.
+
+Source deletion/supersession is blocked until StegBusiness-Ops validation directly proves the destination packet set is complete.

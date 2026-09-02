@@ -1,0 +1,3 @@
+# Operating Agreement Draft — HydraSafe LLC
+Effective after formation only. Sole Member **[PRIVATE]**, 100%. Purpose: To engage in any lawful business for which a limited liability company may be formed in Texas, including safety documentation, readiness, evidence, assessment support, permitting-readiness support, commissioning documentation, inspection documentation, and related commercial services, excluding engineering approval, permit issuance, physical control, or licensed professional services unless separately authorized.
+Management **[MATCH FORMATION]**. Maintain separate records/accounts/contracts. Tax classification **[CONFIRM]**. Signature/date **[REQUIRED]**.

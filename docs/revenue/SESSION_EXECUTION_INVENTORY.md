@@ -1,6 +1,6 @@
 # Near-Term Revenue Session Execution Inventory
 
-Updated: 2026-09-02T07:53:00-05:00
+Updated: 2026-09-02T10:25:00-05:00
 Canonical owner: `StegVerse-Labs/DiamondOps-Core`
 Branch: `main`
 Originating goal: convert existing StegVerse assets into signed HydraSafe invoices and non-dilutive funding while preserving all execution state outside chat.
@@ -22,6 +22,7 @@ Originating goal: convert existing StegVerse assets into signed HydraSafe invoic
 | REV-011 | DoD topic/deadline verification | `DiamondOps-Core/docs/revenue/REGISTRATION_AND_FUNDING_TRACKER.md` | DiamondOps-Core funding lane | CLAIMED_FOR_VALIDATION | PENDING | official solicitation required | AaCT-E package | official topic selected | tracker | capture controlling solicitation and topic-fit memo |
 | REV-012 | PE partner qualification | `HydraSafe/commercial/pe-partner-brief.md` | HydraSafe commercial lane | CLAIMED_FOR_IMPLEMENTATION | PARTIAL | brief installed, no partner receipt | blocks deliverability | qualified partner terms | HydraSafe commercial files | identify five candidates; record qualification outcomes without private data |
 | REV-013 | Cross-repo propagation | Site, Publisher, admissibility-wiki, stegguardian-wiki | DiamondOps-Core integration lane | BLOCKED | NOT DUE | NONE | release-gated | release candidate exists | handoffs | activate only after release criteria are met |
+| REV-014 | Complete LLC filing-document workspace | `docs/Filing Docs/` | DiamondOps-Core formation lane | COMPLETE | COMPLETE_PREPARATION | FILE_PRESENCE_VALIDATOR_INSTALLED; hosted run not yet exposed | formation/procurement stages linked | none for preparation | seven LLC stage packets + common filing/procurement controls + validator commit `6e0e240` | consume human filing receipts and advance REV-009 |
 
 ## Formation execution status
 

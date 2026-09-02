@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "updated_at": "2026-09-02T07:53:00-05:00",
+  "updated_at": "2026-09-02T10:25:00-05:00",
   "canonical_handoff": "docs/DIAMONDOPS_CORE_MIRROR_HANDOFF.md",
   "allowed_states": [
     "UNCLAIMED",
@@ -181,6 +181,35 @@
         "no propagation claim before direct verification"
       ],
       "next_task_after_release": "verify each destination and record receipts"
+    },
+    {
+      "task_id": "REV-014",
+      "originating_goal": "Develop submission-preparation documents for every potential LLC and government procurement filing stage",
+      "repository": "StegVerse-Labs/DiamondOps-Core",
+      "branch": "main",
+      "surfaces": [
+        "docs/Filing Docs/",
+        "scripts/validate_revenue_control_plane.py",
+        "docs/revenue/TEXAS_VETERAN_OWNED_FORMATION_EXECUTION.md"
+      ],
+      "lane": "formation-documentation-and-procurement-readiness",
+      "role": "machine-prepared public-safe filing workspace",
+      "state": "COMPLETE",
+      "claimed_at": "2026-09-02T10:25:00-05:00",
+      "expires_at": null,
+      "release_condition": "satisfied for document preparation when all seven entity stage packets and common procurement controls exist; legal filing remains in REV-009",
+      "expected_evidence": [
+        "entity filing packets",
+        "common procurement controls",
+        "validator coverage",
+        "canonical handoff references"
+      ],
+      "collision_boundaries": [
+        "preparation is not filing",
+        "private identifiers and signatures remain outside public repository",
+        "no certification or procurement eligibility claims without authority evidence"
+      ],
+      "next_task_after_release": "consume actual Texas formation receipts and then advance EIN/SAM/CMBL/VetCert/VetHUB stages per formed entity"
     }
   ]
 }

@@ -1,0 +1,3 @@
+# Operating Agreement Draft — StegVerse Holdings LLC
+Effective after formation only. Sole Member **[PRIVATE]**, 100% unless structure intentionally changes. Purpose: To engage in any lawful business for which a limited liability company may be formed in Texas, including ownership, management, licensing, financing, and administration of lawful business interests, intellectual property, subsidiaries, and investments.
+Management **[MATCH FORMATION]**. Maintain entity separateness. Do not acquire benefit-seeking subsidiaries until qualification impact is resolved. Tax classification **[CONFIRM]**. Signature/date **[REQUIRED]**.

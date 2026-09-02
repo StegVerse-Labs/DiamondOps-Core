@@ -23,11 +23,29 @@ This is the machine-readable/public-safe execution surface for Texas veteran-own
 |---|---|---:|---|---|
 | StegVerse LLC | primary operating/commercial entity | 1 | direct qualifying individual ownership | READY FOR NAME/FORMATION FIELDS |
 | StegVerse Governance LLC | governance / procurement prime candidate | 2 | direct qualifying individual ownership while benefit is sought | READY FOR FINAL PROCUREMENT-STRUCTURE DECISION |
+| StegVerse AI LLC | AI execution / commercial AI services candidate | candidate | direct qualifying individual ownership while benefit is sought | FINAL STRUCTURE DECISION REQUIRED |
 | StegVerse Infra LLC | infrastructure / implementation | 3 | direct qualifying individual ownership while benefit is sought | DEFER UNTIL IMMEDIATE NEED CONFIRMED |
 | H2H / Heavy to Healthy legal entity | non-clinical health/wellness lane | 4 | direct qualifying individual ownership while benefit is sought | NAME / SCOPE NOT FINAL |
 | HydraSafe LLC | commercial safety lane | hold | direct qualifying individual ownership if formed under benefit | NAME CLEARANCE REQUIRED |
 | StegVerse Holdings LLC | eventual parent/holding lane | deferred | do not use as owner of benefit-seeking subsidiaries until qualification consequences are resolved | DEFERRED |
 | StegVerse RaS nonprofit | research/services nonprofit lane | separate | not part of LLC veteran-benefit filing sprint | SEPARATE FORMATION LANE |
+
+## Canonical filing-document workspace
+
+All currently identified potential LLC packets are materialized under `docs/Filing Docs/`.
+
+Each entity folder contains:
+- Texas formation companions for Form 205, Form 05-904, and SOSUpload packet assembly;
+- post-formation operating agreement and initial consent drafts;
+- EIN / SS-4 completion worksheet;
+- government-procurement subfolder with SAM, Texas CMBL, Texas VetHUB, SBA VetCert, capability-statement, and solicitation-submission controls;
+- receipt and renewal register.
+
+Common process controls are in:
+- `docs/Filing Docs/00-Filing-Process/`
+- `docs/Filing Docs/90-Government-Procurement-Common/`
+
+These are submission-preparation surfaces. Official forms, signatures, private identifiers, and authenticated agency submissions remain outside the public repository.
 
 ## Form 205 data required before submission
 

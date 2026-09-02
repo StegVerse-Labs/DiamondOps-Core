@@ -1,6 +1,6 @@
 # Near-Term Revenue Session Execution Inventory
 
-Updated: 2026-08-02T17:45:00-05:00
+Updated: 2026-09-02T07:53:00-05:00
 Canonical owner: `StegVerse-Labs/DiamondOps-Core`
 Branch: `main`
 Originating goal: convert existing StegVerse assets into signed HydraSafe invoices and non-dilutive funding while preserving all execution state outside chat.
@@ -13,15 +13,23 @@ Originating goal: convert existing StegVerse assets into signed HydraSafe invoic
 | REV-002 | HydraSafe customer acquisition | `DiamondOps-Core/customer-acquisition/hydrasafe/` | DiamondOps-Core | CLAIMED_FOR_IMPLEMENTATION | PARTIAL | FILE_PRESENCE_ONLY | linked to HydraSafe | first verified outreach receipt | prospect registry and outreach assets | verify remaining records and prepare first ten accounts |
 | REV-003 | HydraSafe commercial delivery | `HydraSafe/commercial/` and `HydraSafe/docs/HYDRASAFE_MIRROR_HANDOFF.md` | HydraSafe | CLAIMED_FOR_IMPLEMENTATION | PARTIAL | repository validator exists; commercial files not yet independently executed | ReactorOps/YieldOS interfaces installed | PE relationship, secure intake, signed SOW | committed commercial files | install secure intake and billing mechanics; qualify PE partner |
 | REV-004 | Reactor documentation input | `ReactorOps/commercial/hydrasafe-delivery-interface.md` | ReactorOps | CLAIMED_FOR_INTEGRATION | IMPLEMENTED_UNVALIDATED | FILE_PRESENCE_ONLY | HydraSafe interface defined | integration receipt absent | commit `4cf94e1` | add representative facility packet fixture and validate handoff |
-| REV-005 | YieldOS aggregation and receipts | `YieldOS/commercial/facility-packet-record-model.md` | YieldOS | CLAIMED_FOR_INTEGRATION | IMPLEMENTED_UNVALIDATED | FILE_PRESENCE_ONLY | HydraSafe/ReactorOps model defined | integration receipt absent | commit `2b6a40e` | add schema/example and deterministic validation |
+| REV-005 | YieldOS aggregation and receipts | `YieldOS/commercial/facility-packet-record-model.md` | YieldOS | CLAIMED_FOR_INTEGRATION | IMPLEMENTED_UNVALIDATED | FILE_PRESENCE_ONLY | HydraSafe/ReactorOps model defined | integration receipt absent | commit `2b6a40e` | add schema/example and deterministic receipt validation |
 | REV-006 | Keep CrystalWorks off critical path | `CrystalWorks/docs/CRYSTALWORKS_MIRROR_HANDOFF.md` | CrystalWorks | COMPLETE | COMPLETE | FILE_INSPECTED | N/A | none | commit `a526f40` | reassess only after two engagements or direct demand |
-| REV-007 | Veteran formation consultation / VVL | `DiamondOps-Core/docs/revenue/REGISTRATION_AND_FUNDING_TRACKER.md` | Human authority: veteran business consultant | BLOCKED | REQUEST_SUBMITTED | receipt asserted by user; private evidence not stored publicly | gates entity/EIN/SAM | consultant response or 2026-08-16 checkpoint | tracker commit `4d4c4a5` | respond to consultant; record redacted receipt/status |
-| REV-008 | LLC filing-fee benefit/refund | same tracker | Human authority: consultant / Texas filing authority | BLOCKED | OPTION_IDENTIFIED | NOT VERIFIED AGAINST CASE-SPECIFIC GUIDANCE | entity formation | consultant confirms waiver vs refund procedure | tracker commit `ce66bab` | obtain written procedure and evidence requirements |
-| REV-009 | Entity, EIN, SAM, SBA registry, DSIP, VetCert | same tracker | Human authority with repository receipt recording | BLOCKED | NOT STARTED OR NOT RECORDED | official portal receipts required | SBIR/VetCert | upstream formation completion | tracker | complete gates in order; store only redacted receipts/pointers |
+| REV-007 | Veteran formation consultation / VVL | `DiamondOps-Core/docs/revenue/REGISTRATION_AND_FUNDING_TRACKER.md` | Human authority: Texas Veterans Commission / veteran owner | COMPLETE | COMPLETE | PRIVATE SOURCE EVIDENCE REVIEWED; REDACTED STATUS RECORDED | unblocks entity packet preparation | none | VVL issued 2026-08-20; public tracker updated | preserve private original; use only in authorized filing packet |
+| REV-008 | LLC formation-fee benefit path | same tracker + `docs/revenue/TEXAS_VETERAN_OWNED_FORMATION_EXECUTION.md` | Human authority: Texas filing authority / veteran owner | COMPLETE_FOR_PRE_FILING_PATH | COMPLETE | TVC guidance establishes VVL + Form 05-904 + formation document submission path | entity formation | none before entity-specific completion | TVC guidance and current Form 05-904 reviewed; public-safe worksheet committed | populate entity-specific legal fields and submit through SOSUpload |
+| REV-009 | Entity, EIN, SAM, SBA registry, DSIP, VetCert | same tracker | Human authority with repository receipt recording | BLOCKED | FORMATION_PACKET_READY_FOR_HUMAN_FIELDS | official portal receipts required | SBIR/VetCert | accepted Texas formation | tracker + formation worksheet | complete exact entity fields, sign 05-904, submit formation packet, then record redacted receipt |
 | REV-010 | AaCT-E SBIR technical package | `AaCT-E/demo/docs/AACTE_DEMO_MIRROR_HANDOFF.md`; `AaCT-E/demo/funding/sbir/` | AaCT-E/demo | BLOCKED | CANONICAL_REPOSITORY_IDENTIFIED | README and repository metadata inspected; write attempt returned HTTP 403 | `AaCT-E/telemetry` support; `AaCT-E/.github` organization profile | GitHub App gains contents-write access to `AaCT-E/demo` | user-provided repo URLs; README inspection; claim commit `22914aa` | create mirror handoff first, install SBIR workspace, capture topic, execute verification |
 | REV-011 | DoD topic/deadline verification | `DiamondOps-Core/docs/revenue/REGISTRATION_AND_FUNDING_TRACKER.md` | DiamondOps-Core funding lane | CLAIMED_FOR_VALIDATION | PENDING | official solicitation required | AaCT-E package | official topic selected | tracker | capture controlling solicitation and topic-fit memo |
 | REV-012 | PE partner qualification | `HydraSafe/commercial/pe-partner-brief.md` | HydraSafe commercial lane | CLAIMED_FOR_IMPLEMENTATION | PARTIAL | brief installed, no partner receipt | blocks deliverability | qualified partner terms | HydraSafe commercial files | identify five candidates; record qualification outcomes without private data |
 | REV-013 | Cross-repo propagation | Site, Publisher, admissibility-wiki, stegguardian-wiki | DiamondOps-Core integration lane | BLOCKED | NOT DUE | NONE | release-gated | release candidate exists | handoffs | activate only after release criteria are met |
+
+## Formation execution status
+
+- Canonical public-safe worksheet: `docs/revenue/TEXAS_VETERAN_OWNED_FORMATION_EXECUTION.md`.
+- VVL issuance is complete and no longer a blocker.
+- Pre-filing veteran-owned fee/tax qualification path is documented from the supplied TVC materials.
+- Formation itself remains unclaimed: no SOS submission receipt or acceptance evidence has been recorded.
+- Sensitive VVL identifiers, addresses, signatures, DD-214 contents, tax identifiers, and portal credentials remain outside the public repository.
 
 ## AaCT-E repository assignment
 

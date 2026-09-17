@@ -236,3 +236,7 @@ No legal filing or external registration state is inferred from the migration.
 - The first two bounded reference engagements retain the existing USD 8,000 introductory target; no prospect acceptance of that target is claimed.
 - Authority boundary remains documentation/evidence readiness only; independent licensed-PE review remains separate wherever required.
 - Next executable action: after explicit send authorization, send only the prepared cohort through the authenticated provider, preserve provider-observed send evidence without publishing private customer data, move only sent records to `CONTACTED`, and classify authentic replies strictly against the five commercial predicates above.
+
+## HydraSafe commercial COSV binding — 2026-09-17
+
+The existing canonical commercial task `HYDRA-COMMERCIAL-001` remains owned by the DiamondOps-Core customer-acquisition lane under parent revenue goal `REV-001`. Its canonical HydraSafe task registry now binds it to `task.v1` COSV `20010000110000` (`L R U I V G O C M T B E A P`), with `CLAIMED_IMPLEMENTATION`, installed canonical owner, current-thread requirement for explicit send authorization, zero blocker count, incomplete evidence, and no activation/propagation claim. This is state indexing only and does not create another commercial task or grant authority.

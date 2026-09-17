@@ -1,6 +1,6 @@
 # DiamondOps-Core Mirror Handoff
 
-Last updated: 2026-09-02T07:53:00-05:00
+Last updated: 2026-09-17T18:28:00-05:00
 Status: CANONICAL WORKSTREAM ACTIVE — formation preparation advanced; external activation remains
 
 ## Active goal and goal ID
@@ -225,3 +225,14 @@ Current migration disposition:
 - DiamondOps-specific commercial references remain in this repository.
 
 No legal filing or external registration state is inferred from the migration.
+
+## 2026-09-17 HydraSafe commercial evidence activation
+
+- Parent revenue goal remains `REV-001`; canonical commercial owner remains `HYDRA-COMMERCIAL-001` in `StegVerse-Labs/HydraSafe/ops/task-registry.json`. No duplicate commercial task was created.
+- Refreshed the five leading U.S. Tier-A records `HS-002`, `HS-006`, `HS-007`, `HS-008`, and `HS-012` against current first-party public evidence and corrected stale location/contact facts where observed.
+- All five records are `READY_FOR_OUTREACH`. None is `CONTACTED` because no message has been sent.
+- Four prospect-specific drafts are prepared and unsent for Great Lakes Crystal Technologies, Seki Diamond Systems, Carat Systems, and Element Six. Plasmability has a current official web/phone route, but no public email was guessed from its obfuscated live-site address.
+- Commercial evidence state remains unvalidated: no prospect has yet confirmed a costly documentation/readiness problem, accepted the bounded assessment, discussed an authorized document set, expressed willingness to discuss paid remediation scope/quote, or referred the inquiry to an authorized decision-maker.
+- The first two bounded reference engagements retain the existing USD 8,000 introductory target; no prospect acceptance of that target is claimed.
+- Authority boundary remains documentation/evidence readiness only; independent licensed-PE review remains separate wherever required.
+- Next executable action: after explicit send authorization, send only the prepared cohort through the authenticated provider, preserve provider-observed send evidence without publishing private customer data, move only sent records to `CONTACTED`, and classify authentic replies strictly against the five commercial predicates above.

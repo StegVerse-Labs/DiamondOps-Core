@@ -21,3 +21,9 @@ SemVer:
 
 ## Status
 - v0.1.0: initial contract set
+
+## HydraSafe commercial activation
+
+Near-term customer acquisition is governed by parent revenue goal `REV-001` and HydraSafe task `HYDRA-COMMERCIAL-001`. The active prospect workflow lives in [`customer-acquisition/hydrasafe/`](customer-acquisition/hydrasafe/) and current coordination state is preserved in [`docs/DIAMONDOPS_CORE_MIRROR_HANDOFF.md`](docs/DIAMONDOPS_CORE_MIRROR_HANDOFF.md).
+
+As of 2026-09-17, five leading U.S. Tier-A prospects have been re-verified against current public evidence and moved to `READY_FOR_OUTREACH`. Four prospect-specific Outlook drafts are prepared but unsent. No prospect is recorded as `CONTACTED`, and no problem confirmation, assessment acceptance, authorized-document-set discussion, paid-scope willingness, or decision-maker referral has yet been evidenced.

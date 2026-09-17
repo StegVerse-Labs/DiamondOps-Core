@@ -67,3 +67,15 @@ The environment is activation-ready when:
 - at least 10 are Tier A or Tier B with a public contact route;
 - the offer, intake, and conversion boundaries are installed;
 - the handoff reflects current state and next action.
+
+## 2026-09-17 Tier-A U.S. evidence refresh
+
+Canonical commercial owner remains `HYDRA-COMMERCIAL-001` under parent revenue goal `REV-001`; no duplicate commercial task was created.
+
+Five leading U.S. Tier-A records were refreshed against current first-party public evidence: `HS-002` Great Lakes Crystal Technologies, `HS-006` Plasmability, `HS-007` Seki Diamond Systems, `HS-008` Carat Systems, and `HS-012` Element Six. All five are now `READY_FOR_OUTREACH`, not `CONTACTED`.
+
+Four prospect-specific drafts were created in the authorized Outlook mailbox for Great Lakes, Seki, Carat, and Element Six and remain unsent. Plasmability remains ready via its current official contact route and phone; its live-site email is obfuscated, so no address was guessed.
+
+Commercial validation remains evidence-only. A response may satisfy only one or more of these predicates when the prospect actually states it: problem confirmation; acceptance of the bounded no-cost assessment; discussion of a customer-authorized document set; willingness to discuss a paid scope or quote; or referral to an authorized decision-maker. Public fit, draft creation, delivery, opens, polite acknowledgment, or generic curiosity do not satisfy commercial validation.
+
+The HydraSafe authority boundary is unchanged: documentation and evidence readiness only. No engineering approval, PE authority, legal advice, code or compliance certification, permit issuance, site inspection, physical work, or authorization to operate is claimed. Licensed engineering review remains independently owned where required.

@@ -78,3 +78,11 @@ A paid remediation scope may be proposed only after the free gap report is deliv
 - implementation and verification support.
 
 Never state or imply that HydraSafe guarantees permit issuance, compliance, inspection success, or authority acceptance.
+
+## Provider-observed initial cohort — 2026-09-17
+
+Sender: authenticated Outlook profile `rigel@stegverse.org`.
+
+Provider-observed sends: Great Lakes Crystal Technologies at `2026-09-18T01:11:32Z`; Seki Diamond Systems at `2026-09-18T01:11:34Z`; Carat Systems at `2026-09-18T01:11:34Z`; Element Six at `2026-09-18T01:11:35Z`.
+
+No inbound reply was observed during the immediate post-send recheck. These send receipts advance only to `CONTACTED`; they do not establish problem confirmation, assessment acceptance, an authorized document set, paid-scope willingness, or decision-maker referral.

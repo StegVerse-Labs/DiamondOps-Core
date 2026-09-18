@@ -83,3 +83,16 @@ The HydraSafe authority boundary is unchanged: documentation and evidence readin
 ## 2026-09-17 Gmail authorization state
 
 Explicit send authorization was granted for the four prepared U.S. Tier-A messages from `rigel@stegverse.org` using Gmail. The connected Gmail provider identity did not match that sender and no selectable send-as identity was exposed, so no message was sent. Great Lakes, Plasmability, Seki, Carat, and Element Six remain `READY_FOR_OUTREACH`; none is `CONTACTED`. Do not promote delivery or commercial predicates until provider-observed SENT evidence exists from the authorized sender.
+
+## 2026-09-17 provider-observed Outlook outreach
+
+The authorized Outlook profile resolved to `rigel@stegverse.org`. Four previously prepared prospect-specific messages were sent and then independently re-observed in Outlook Sent Items:
+
+- `HS-002` Great Lakes Crystal Technologies — provider-observed sent timestamp `2026-09-18T01:11:32Z`;
+- `HS-007` Seki Diamond Systems — provider-observed sent timestamp `2026-09-18T01:11:34Z`;
+- `HS-008` Carat Systems — provider-observed sent timestamp `2026-09-18T01:11:34Z`;
+- `HS-012` Element Six — provider-observed sent timestamp `2026-09-18T01:11:35Z`.
+
+Those four records advance from `READY_FOR_OUTREACH` to `CONTACTED`. `HS-006` Plasmability remains `READY_FOR_OUTREACH` because no trustworthy public email address was available and none was guessed.
+
+Immediate Outlook rechecks found no inbound response from the four target addresses/domains. Therefore problem confirmation, bounded-assessment acceptance, authorized-document-set discussion, paid-scope/quote willingness, authorized-decision-maker referral, buyer validation, and paid engagement all remain false. Sent evidence proves outreach only.

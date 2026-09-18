@@ -254,3 +254,13 @@ The authenticated Outlook profile resolved to `rigel@stegverse.org`. The four ap
 Accordingly, `HS-002`, `HS-007`, `HS-008`, and `HS-012` are `CONTACTED`. `HS-006` Plasmability remains `READY_FOR_OUTREACH`. Immediate reply searches returned no inbound prospect response. No commercial-validation predicate, assessment intake, quote willingness, signed scope, or revenue is claimed.
 
 Next action is response observation and evidence classification, not technical implementation. Preserve exact authentic replies before advancing any record beyond `CONTACTED`.
+
+## HydraSafe public served-body confirmation — 2026-09-17
+
+The existing `HYDRA-COMMERCIAL-001` commercial lane now has direct user-browser evidence that the public HydraSafe customer page is being served on `stegverse.org`. The user-supplied iPhone Safari screenshot SHA-256 is `b86de0c30c95fd0905bb384ce09663342e08c70f10757eb1ba01cd6f9ced26c5`.
+
+Visible markers match the merged Site source: the HydraSafe/DiamondOps commercial-service-mirror label, the hydrogen/reactive-gas CVD documentation-readiness heading, the no-cost gap-review CTA, the `MIRROR` authority boundary, and the public `Services` navigation entry. Site publication claim `SITE-HYDRASAFE-PUBLICATION-20260917-R3` is `RELEASED_COMPLETE` through Site PR `#1388`, merge `087d8741db3dc6e15e734e82f440351b1a61d09a`.
+
+The separate `/services.html` body has not been independently screenshot-observed; only its merged source and live Services navigation are established. This distinction does not change the commercial lane.
+
+A fresh Outlook recheck found no authentic inbound reply from Great Lakes Crystal Technologies, Seki Diamond Systems, Carat Systems, or Element Six. Those four remain `CONTACTED`; Plasmability remains `READY_FOR_OUTREACH`. No problem-confirmation, assessment-acceptance, authorized-document-set, paid-scope/quote, decision-maker-referral, signed-engagement, or revenue predicate is satisfied.

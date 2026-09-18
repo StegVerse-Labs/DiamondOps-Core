@@ -79,3 +79,7 @@ Four prospect-specific drafts were created in the authorized Outlook mailbox for
 Commercial validation remains evidence-only. A response may satisfy only one or more of these predicates when the prospect actually states it: problem confirmation; acceptance of the bounded no-cost assessment; discussion of a customer-authorized document set; willingness to discuss a paid scope or quote; or referral to an authorized decision-maker. Public fit, draft creation, delivery, opens, polite acknowledgment, or generic curiosity do not satisfy commercial validation.
 
 The HydraSafe authority boundary is unchanged: documentation and evidence readiness only. No engineering approval, PE authority, legal advice, code or compliance certification, permit issuance, site inspection, physical work, or authorization to operate is claimed. Licensed engineering review remains independently owned where required.
+
+## 2026-09-17 Gmail authorization state
+
+Explicit send authorization was granted for the four prepared U.S. Tier-A messages from `rigel@stegverse.org` using Gmail. The connected Gmail provider identity did not match that sender and no selectable send-as identity was exposed, so no message was sent. Great Lakes, Plasmability, Seki, Carat, and Element Six remain `READY_FOR_OUTREACH`; none is `CONTACTED`. Do not promote delivery or commercial predicates until provider-observed SENT evidence exists from the authorized sender.

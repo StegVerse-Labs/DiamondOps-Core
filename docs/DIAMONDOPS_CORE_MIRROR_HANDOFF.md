@@ -240,3 +240,9 @@ No legal filing or external registration state is inferred from the migration.
 ## HydraSafe commercial COSV binding — 2026-09-17
 
 The existing canonical commercial task `HYDRA-COMMERCIAL-001` remains owned by the DiamondOps-Core customer-acquisition lane under parent revenue goal `REV-001`. Its canonical HydraSafe task registry now binds it to `task.v1` COSV `20010000110000` (`L R U I V G O C M T B E A P`), with `CLAIMED_IMPLEMENTATION`, installed canonical owner, current-thread requirement for explicit send authorization, zero blocker count, incomplete evidence, and no activation/propagation claim. This is state indexing only and does not create another commercial task or grant authority.
+
+## Gmail authorization state — 2026-09-17
+
+The HydraSafe commercial lane has explicit authorization to send the prepared Great Lakes Crystal Technologies, Seki Diamond Systems, Carat Systems, and Element Six messages using Gmail from `rigel@stegverse.org`. Provider inspection found that the currently connected Gmail identity does not match the authorized sender and exposes no selectable send-as field, so zero messages were sent and all five leading records remain `READY_FOR_OUTREACH`. No commercial predicate was promoted.
+
+Next action is to connect/switch Gmail to the authorized sender identity and then send only the four existing prepared messages, preserving provider-observed SENT evidence before advancing any prospect to `CONTACTED`.

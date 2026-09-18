@@ -96,3 +96,9 @@ The authorized Outlook profile resolved to `rigel@stegverse.org`. Four previousl
 Those four records advance from `READY_FOR_OUTREACH` to `CONTACTED`. `HS-006` Plasmability remains `READY_FOR_OUTREACH` because no trustworthy public email address was available and none was guessed.
 
 Immediate Outlook rechecks found no inbound response from the four target addresses/domains. Therefore problem confirmation, bounded-assessment acceptance, authorized-document-set discussion, paid-scope/quote willingness, authorized-decision-maker referral, buyer validation, and paid engagement all remain false. Sent evidence proves outreach only.
+
+## 2026-09-17 public HydraSafe page observation
+
+The public HydraSafe customer page is now directly observed in a user-supplied iPhone Safari screenshot on `stegverse.org`, matching the merged customer-facing source and its `MIRROR` authority boundary. Evidence SHA-256: `b86de0c30c95fd0905bb384ce09663342e08c70f10757eb1ba01cd6f9ced26c5`.
+
+This makes the public page available as explanatory context for future prospect follow-up without changing validation rules. Four prospects remain `CONTACTED`, Plasmability remains `READY_FOR_OUTREACH`, and a fresh Outlook recheck found no reply or commercial predicate.

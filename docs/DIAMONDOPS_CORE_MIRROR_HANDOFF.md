@@ -276,3 +276,10 @@ Plasmability `HS-006` advanced to `CONTACTED` after the user's explicit send ins
 ## 2026-09-24 Tier-B initial outreach — three provider-observed contacts
 
 Three existing VERIFIED Tier-B records advanced to `CONTACTED` after prospect-specific Outlook emails were independently re-observed by exact recipient and subject: HS-009 CVD Diamond Corporation (`cvdinfo@cvddiamond.com`, 22:19:52Z), HS-023 Diyam Impex (`diyamimpex@gmail.com`, 22:19:55Z), and HS-011 CVD Diamond Inc (`info@cvddiamondinc.com`, 22:19:57Z). First-party contact pages publish each respective email address. Immediate sender searches returned no inbound replies. Messages explicitly qualify reactor ownership and/or actual process-gas use where unverified, preserve no-cost bounded scope and engineering/authority exclusions, and do not imply a known facility deficiency. Five existing Tier-A prospects remain CONTACTED. All five commercial-validation predicates are false; eight sent messages do not prove recipient delivery or buyer validation. Remaining Tier-B entries retain prior stages pending current-fit and current-contact verification; no speculative address was used or duplicate initial outreach sent.
+
+
+## StegOps CRM projection coordination — 2026-10-01
+
+`REV-001` now coordinates with the proposed StegOps scoped task `STEGOPS-CAMPAIGN-CRM-PROJECTION-001` for cross-service commercial visibility. The StegOps layer is read/projection only: HydraSafe source records, outreach evidence, qualification predicates and next actions remain canonical in the existing DiamondOps/HydraSafe surfaces. Initial StegOps fixtures reference the eight currently `CONTACTED` HydraSafe records without changing them and bind `projection_authority=NONE`.
+
+This coordination reference does not renew or silently reinterpret the historical `REV-001` claim expiry in `tasks/revenue-claims.json`; that stale claim remains explicit and requires a separate canonical claim-state reconciliation rather than being masked by CRM work.

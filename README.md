@@ -55,3 +55,8 @@ Plasmability `HS-006` advanced to `CONTACTED` after the user's explicit send ins
 ## 2026-09-24 Tier-B initial outreach — three provider-observed contacts
 
 Three existing VERIFIED Tier-B records advanced to `CONTACTED` after prospect-specific Outlook emails were independently re-observed by exact recipient and subject: HS-009 CVD Diamond Corporation (`cvdinfo@cvddiamond.com`, 22:19:52Z), HS-023 Diyam Impex (`diyamimpex@gmail.com`, 22:19:55Z), and HS-011 CVD Diamond Inc (`info@cvddiamondinc.com`, 22:19:57Z). First-party contact pages publish each respective email address. Immediate sender searches returned no inbound replies. Messages explicitly qualify reactor ownership and/or actual process-gas use where unverified, preserve no-cost bounded scope and engineering/authority exclusions, and do not imply a known facility deficiency. Five existing Tier-A prospects remain CONTACTED. All five commercial-validation predicates are false; eight sent messages do not prove recipient delivery or buyer validation. Remaining Tier-B entries retain prior stages pending current-fit and current-contact verification; no speculative address was used or duplicate initial outreach sent.
+
+
+## StegOps CRM projection coordination
+
+Cross-service commercial visibility is being added as an authority-free read projection in `StegVerse-Labs/StegOps-Orchestrator` under `STEGOPS-CAMPAIGN-CRM-PROJECTION-001`. DiamondOps/HydraSafe remains canonical for HydraSafe prospect research, outreach and qualification. StegOps projections reference source records and evidence with `projection_authority=NONE`; they do not replace `HS-*` records or write campaign state back here.
